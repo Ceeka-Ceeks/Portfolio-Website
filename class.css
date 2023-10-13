@@ -1,0 +1,30 @@
+body{
+    margin: 0px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper .side-nav .menu .li{
+color: #00c8c8; 
+padding: 10px 0px;
+display: felx;
+align-items: center;  
+}
+
+.menu{
+    list-style: none;
+}
+
+.wrapper .side-nav .menu .menu-icon{
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  .wrapper .side-nav .menu .menu-acctive{
+    background-color: #00c8c8;
+    color: #ffff;
+    
+  }

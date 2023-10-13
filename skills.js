@@ -1,3 +1,5 @@
+// Put this updated JavaScript code in your existing `script.js` file
+
 document.addEventListener('DOMContentLoaded', function() {
     var scrollToTopBtn = document.getElementById('scrollToTopBtn');
   
