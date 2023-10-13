@@ -18,220 +18,18 @@
     --p-font:1.1rem;
 }
 
+body{
+    background-color: #1f1f21;
+}
+
 .body-home{
     background-color: var(--bg-color);
     color: var(--text-color);
     overflow-x:  hidden;
     background-size: 100vw;
     background-repeat: no-repeat;
-    background-position: center -150px;
-    overflow-y: scroll ;
-    
+    background-position: center -150px;    
 }
-
-.container{
-    margin-top: 5rem;
-}
-
-/* contact page css
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*/
 
 
 header{
@@ -279,17 +77,46 @@ header a{
 
 .body-home {
     display: flex;
-
     align-items: center;
-    justify-content: space-between;
+}
+
+  
+  body {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f21;
   }
-
   
-
+p{
+    color: #ffae00;
+}
+.left,.right {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
   
-  /* img{
-    width: 800px;
-    height: 600px;
-    margin-bottom: 2rem;
-
-  } */
+    padding-top: 20px;
+ }
+ .left {
+    left: 0;
+    background-color: rgb(36, 0, 95);
+ }
+ .right {
+    right: 0;
+    background-color: rgb(56, 1, 44);
+ }
+ .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+ }
+ .centered img {
+    width: 150px;
+    border-radius: 50%;
+ }
