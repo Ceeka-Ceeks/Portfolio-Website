@@ -28,14 +28,35 @@
             </ul>
         </header>
 
+        
+          <div class="scroll-container">
+            <div id="div1" class="scroll-slide">Slide 1</div>
+            <div id="div2" class="scroll-slide">Slide 2</div>
+        </div>
+          
+        <a href="contact.html" id="scrollToTopBtn">Scroll to Top</a>
+             
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var myInterval = false;
+                var index = 0;
+                var elements = ["#div1","#div2"];
+                myInterval = setInterval(AutoScroll, 5000);
+    
+                function AutoScroll() {
+                    $('html, body').animate({
+                        scrollTop: $(elements[index]).offset().top
+                    }, 1000);
+    
+                    if(index < (elements.length - 1)){
+                        index++;
+                    } else {
+                        index = 0;
+                    }
+                }
+            });
+        </script>
 
-        <div class="container">
-            <h1>Contact Me</h1>
-            <div class="contact-info">
-              <p><strong>Email:</strong> your-email@example.com</p>
-              <p><strong>Instagram:</strong> <a href="https://www.instagram.com/your_instagram_username/">@your_instagram_username</a></p>
-            </div>
-          </div>
-        <script src="js/script.js"></script>
     </body>
 </html>
