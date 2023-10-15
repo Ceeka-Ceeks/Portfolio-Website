@@ -130,7 +130,7 @@ p{
     display: flex;
     border-bottom: 3px solid #ffae00;
     scroll-behavior: smooth;
-   
+    opacity: .70;
     box-sizing: border-box;
   }
   
@@ -149,3 +149,27 @@ p{
     display: flex;
     position: relative;
   }
+
+  .about_me{
+    margin-top: 2px;
+    color: #ffae00;
+    
+  }
+
+p{
+    margin-top: 16px;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: justify;
+    color: #fff;
+    /* opacity: .95; */
+    margin-right: 32px;
+}
+
+.qoute {
+    font-size: 40px;
+    font-family: monospace;
+    text-align: justify;
+    color: #ffae00;
+    opacity: .60;
+}
