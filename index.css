@@ -89,11 +89,11 @@ header a{
     margin: 0 auto;
   }
 
-  .body-home {
+  /* .body-home {
     display: flex;
     justify-content: center;
 
-  }
+  } */
 
 
   .container{
@@ -109,7 +109,7 @@ header a{
     color: var(--main-color);
     font-weight: lighter;
 
-    /* From https://css.glass */
+   
 
   }
 

@@ -101,7 +101,7 @@ header a{
   .scroll-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: #1f1f21;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -113,8 +113,8 @@ header a{
     bottom: 20px;
     right: 20px;
     padding: 10px 20px;
-    background-color: #337ab7;
-    color: #fff;
+    /* background-color: #fff; */
+    color: #ffae00;
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -125,5 +125,31 @@ header a{
   }
   
   #scrollToTopBtn:hover {
-    background-color: #23527c;
+    background-color: #fff;
+    opacity: 70%;
+  }
+
+  #div1{
+    color:  #ffae00;
+    font-size: 80px;
+  }
+
+  #div2{
+    color:  #ffae00;
+    font-size: 80px;
+  }
+
+  #div3{
+    color:  #ffae00;
+    font-size: 80px;
+  }
+
+  #div4{
+    color:  #ffae00;
+    font-size: 80px;
+  }
+
+  #div5{
+    color:  #ffae00;
+    font-size: 80px;
   }

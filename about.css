@@ -100,7 +100,7 @@ p{
     z-index: 1;
     top: 0;
   
-    padding-top: 20px;
+    /* padding-top: 20px; */
  }
  .left {
     left: 0;
@@ -142,16 +142,16 @@ p{
   section {
     z-index: 0;
     width: 100vw;
-    min-height: 70vh;
+    min-height: 50vh;
     flex-direction: column;
     justify-content: center;
-    padding: 15vh 10vw;
+    padding: 10vh 10vw;
     display: flex;
     position: relative;
   }
 
   .about_me{
-    margin-top: 2px;
+    /* margin-top: 1px; */
     color: #ffae00;
     
   }
