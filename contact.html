@@ -13,18 +13,25 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <!-- <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
-        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="./css/contact.css">
 
     </head>
     <body >
-        <header class="body-home">
-            <a href="index.html"><span style="color:  #ffae00">C</span>eeks</a>
+
+        <header>
+            <a href=""><span style="color: #ffae00">C</span>eeks</a>
+            <!-- Ajoutez l'ID "burger" à la div du menu hamburger -->
+            <div class="menu-toggle" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html" class="active" >Contact</a></li>
-                <li><a href="skills.html" >Skills</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a class="active" href="./contact.html">Contact</a></li>
+                <li><a href="./skills.html">Skills</a></li>
             </ul>
         </header>
 
@@ -34,7 +41,7 @@
             <div id="div2" class="scroll-slide"> <a href='https://www.instagram.com/_ceeks/?hl=en' class="ig">IG: _ceeks</a></div>
         </div>
           
-        <a href="contact.html" id="scrollToTopBtn">Scroll to Top</a>
+        <a href="./contact.html" id="scrollToTopBtn">Scroll to Top</a>
              
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script type="text/javascript">
@@ -56,6 +63,16 @@
                     }
                 }
             });
+
+                
+            const burger = document.getElementById("burger");
+            const menu = document.querySelector("ul.navbar");
+
+            burger.addEventListener("click", function () {
+                menu.classList.toggle("menu-opened");
+            });
+
+
         </script>
 
     </body>
