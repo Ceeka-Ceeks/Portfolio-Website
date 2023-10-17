@@ -237,4 +237,10 @@ ul.navbar li {
       font-weight: bold;
       color: #ffae00;
   }
+  
+  #div6 > span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffae00;
+  }
 }
