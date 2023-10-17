@@ -17,25 +17,32 @@
 
 </head>
 <body>
-    <header class="body-home">
-        <a href="index.html"><span style="color: #ffae00">C</span>eeks</a>
+    <header>
+        <a href=""><span style="color: #ffae00">C</span>eeks</a>
+        <!-- Ajoutez l'ID "burger" à la div du menu hamburger -->
+        <div class="menu-toggle" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <ul class="navbar">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
             <li><a href="./projects.html">Projects</a></li>
             <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./skills.html" class="active" >Skills</a></li>
+            <li><a class="active" href="./skills.html">Skills</a></li>
         </ul>
     </header>
 
     <div class="scroll-container">
-        <div id="div1" class="scroll-slide">Business development</div>
-        <div id="div2" class="scroll-slide">Product Development</div>
-        <div id="div3" class="scroll-slide">Product Management</div>
-        <div id="div4" class="scroll-slide">Presentation Design</div>
-        <div id="div5" class="scroll-slide">Research</div>
-        <div id="div5" class="scroll-slide">Photography</div>
+        <div id="div1" class="scroll-slide"><span>Business development</span></div>
+        <div id="div2" class="scroll-slide"><span>Product Development</span></div>
+        <div id="div3" class="scroll-slide"><span>Product Management</span></div>
+        <div id="div4" class="scroll-slide"><span>Presentation Design</span></div>
+        <div id="div5" class="scroll-slide"><span>Research</span></div>
+        <div id="div6" class="scroll-slide"><span>Photography</span></div>
     </div>
+    
       
     <a href="./skills.html" id="scrollToTopBtn">Scroll to Top</a>
          
@@ -58,6 +65,13 @@
                     index = 0;
                 }
             }
+        });
+
+        const burger = document.getElementById("burger");
+        const menu = document.querySelector("ul.navbar");
+
+        burger.addEventListener("click", function () {
+            menu.classList.toggle("menu-opened");
         });
     </script>
 </body>
