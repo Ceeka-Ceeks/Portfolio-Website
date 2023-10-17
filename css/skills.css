@@ -154,6 +154,11 @@ header a{
     font-size: 80px;
   }
 
+  #div6 > span {
+    color:  #ffae00;
+    font-size: 80px;
+  }
+
 
 @media (max-width:768px) {
   header {
