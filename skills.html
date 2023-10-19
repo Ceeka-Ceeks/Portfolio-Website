@@ -33,46 +33,10 @@
             <li><a class="active" href="./skills.html">Skills</a></li>
         </ul>
     </header>
-
-    <div class="scroll-container">
-        <div id="div1" class="scroll-slide"><span>Business development</span></div>
-        <div id="div2" class="scroll-slide"><span>Product Development</span></div>
-        <div id="div3" class="scroll-slide"><span>Product Management</span></div>
-        <div id="div4" class="scroll-slide"><span>Presentation Design</span></div>
-        <div id="div5" class="scroll-slide"><span>Research</span></div>
-        <div id="div6" class="scroll-slide"><span>Photography</span></div>
-    </div>
-    
-      
-    <a href="./skills.html" id="scrollToTopBtn">Scroll to Top</a>
-         
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            var myInterval = false;
-            var index = 0;
-            var elements = ["#div1","#div2","#div3","#div4","#div5"];
-            myInterval = setInterval(AutoScroll, 5000);
-
-            function AutoScroll() {
-                $('html, body').animate({
-                    scrollTop: $(elements[index]).offset().top
-                }, 1000);
-
-                if(index < (elements.length - 1)){
-                    index++;
-                } else {
-                    index = 0;
-                }
-            }
-        });
-
-        const burger = document.getElementById("burger");
-        const menu = document.querySelector("ul.navbar");
-
-        burger.addEventListener("click", function () {
-            menu.classList.toggle("menu-opened");
-        });
-    </script>
+    <body>
+        <div class="typewriter">
+            <h1 id="text"></h1>
+        </div>
+        <script src="skills.js"></script>
 </body>
 </html>

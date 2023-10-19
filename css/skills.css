@@ -11,27 +11,13 @@
 
 
 :root{
-    --bg-color:#1f1f21;
+    --bg-color:#0c0c0c;
     --text-color: #fff;
     --main-color: #ffae00;
     --big-font: 7rem;
     --p-font:1.1rem;
 }
 
-body{
-    background-color: #1f1f21;
-}
-
-.body-home{
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    overflow-x:  hidden;
-    background-size: 100vw;
-    background-repeat: no-repeat;
-    background-position: center -150px;
-    overflow-y: scroll ;
-    
-}
 
 
 header{
@@ -76,88 +62,41 @@ header a{
     color: var(--main-color);
 }
 
-
-.body-home {
-    display: flex;
-    align-items: center;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  /* background-color: #0c0c0c; */
+  background-image: url(../images/fantaska.gif);
+  background-size: 100%;
 }
 
-  
-  body {
-    position: relative;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
-  
-  .scroll-container {
-    width: 100%;
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-  }
-  
-  .scroll-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #1f1f21;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.typewriter {
+  text-align: center;
+}
 
-  #scrollToTopBtn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    /* background-color: #fff; */
-    color: #ffae00;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    font-size: 18px !important;
-    position: fixed;
-    z-index: 9999;
-  }
-  
-  #scrollToTopBtn:hover {
-    background-color: #fff;
-    opacity: 70%;
-  }
+#text {
+  color: #ffae00;
+  font-size: 80px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
 
-  #div1{
-    color:  #ffae00;
-    font-size: 80px;
-  }
 
-  #div2{
-    color:  #ffae00;
-    font-size: 80px;
-  }
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
 
-  #div3{
-    color:  #ffae00;
-    font-size: 80px;
-  }
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
 
-  #div4{
-    color:  #ffae00;
-    font-size: 80px;
-  }
-
-  #div5{
-    color:  #ffae00;
-    font-size: 80px;
-  }
-
-  #div6 > span {
-    color:  #ffae00;
-    font-size: 80px;
-  }
 
 
 @media (max-width:768px) {

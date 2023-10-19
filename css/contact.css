@@ -11,16 +11,13 @@
 
 
 :root{
-    --bg-color:#1f1f21;
+    --bg-color:#0c0c0c;
     --text-color: #fff;
     --main-color: #ffae00;
     --big-font: 7rem;
     --p-font:1.1rem;
 }
 
-body{
-    background-color: #1f1f21;
-}
 
 .body-home{
     background-color: var(--bg-color);
@@ -42,7 +39,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 32px 15%;
-    background: transparent;
+    background-color: #0c0c0c;
     transition: all ease .45s;
 }
 
@@ -50,6 +47,7 @@ header a{
     color: var(--text-color);
     font-size: 41px;
     font-weight: 600;
+    text-decoration: none;
 }
 
 
@@ -96,7 +94,7 @@ header a{
     overflow-y: scroll;
     scroll-behavior: smooth;
     font-family: monospace;
-    color: ##933dc9;
+    color: #933dc9;
     background-color: #1f1f21;
   }
   
@@ -110,6 +108,10 @@ header a{
     align-items: center;
   }
 
+  .scroll-slide a{
+    background-color: #0c0c0c;
+    opacity: 80%;
+  }
   #scrollToTopBtn {
     position: fixed;
     bottom: 20px;
@@ -140,12 +142,24 @@ header a{
   font-size: 80px;
 }
 
+#div1{
+  background-image: url(../images/computers.png);
+  /* background-color: rgba(0, 0, 0, 1); */
+}
+
+#div2{
+  background-image: url(../images/gbcomp.png);
+  background-size: 18%;
+  /* background-color: rgba(0, 0, 0, 1); */
+}
+
 
 @media (max-width:768px) {
   header {
     margin-top: 100px;
     padding: 10px;
-}
+  }
+
 header a {
     font-size: 24px;
     align-self: flex-start;
