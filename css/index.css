@@ -148,24 +148,38 @@ header a{
 }
 
 
- /* Réduire la taille de la police pour les écrans plus petits */
+
+
+
+
+
+
 @media (max-width: 768px) {
     .body-home {
         margin-top: 0;
         padding-top: 0;
         background-size: 100vw;
-        background-position-y: 130px;
-        height: 90vh;
+        background-position-y: 2px;
+        /* height: 90vh; */
     }
+
     /* menu code */
     header {
-        margin-top: 100px;
+        margin-top: -10px;
         padding: 10px;
+
+        
     }
+
     header a {
         font-size: 24px;
         align-self: flex-start;
-        margin-top: 10px;
+        /* margin-top: 10px; */
+    }
+
+    body > header > a {
+        font-size: 50px;
+
     }
 
     body > header > ul {
@@ -174,7 +188,7 @@ header a{
         top: 50px;
     }
     
-     .navbar a {
+    .navbar a {
         font-size: 18px;
         margin: 0 10px;
     }
@@ -189,7 +203,7 @@ header a{
         flex-direction: column;
         position: fixed;
 
-        top: 110px;
+        top: 7px;
         right: 10px;
     }
 
